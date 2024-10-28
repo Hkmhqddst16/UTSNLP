@@ -8,7 +8,7 @@ import string
 import re
 import pickle
 from pprint import pprint
-import gensim
+import gensim 
 import gensim.corpora as corpora
 from gensim.utils import simple_preprocess
 import spacy
