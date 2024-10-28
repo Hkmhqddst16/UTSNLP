@@ -23,5 +23,5 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: Run BERTopic Model
-        run: python .github/workflows/streamlit_app.py
+        run: python streamlit_app.py
 
