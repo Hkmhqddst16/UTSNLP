@@ -4,7 +4,7 @@ from bertopic import BERTopic
 import nltk
 
 # Pastikan untuk mengunduh stopwords jika belum
-nltk.download('stopwords')
+nltk.download('stopwords') 
 
 # Fungsi untuk memproses teks dan menghasilkan topik
 def generate_topics(text, n_topics=5):
