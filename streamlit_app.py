@@ -1,6 +1,7 @@
 import streamlit as st
 import pandas as pd
 from bertopic import BERTopic
+import hdbscan
 import nltk
 
 # Pastikan untuk mengunduh stopwords jika belum
@@ -12,7 +13,10 @@ def generate_topics(text, n_topics=5):
     documents = text.split('\n')
     
     # Menggunakan BERTopic untuk menemukan topik
-    topic_model = BERTopic(hdbscan_params={'min_cluster_size': 10, 'min_samples': 15})
+    hdbscan_model = hdbscan.HDBSCAN(min_cluster_size=10, min_samples=15)
+
+    # Membuat objek BERTopic dengan meneruskan HDBSCAN model
+    topic_model = BERTopic(hdbscan_model=hdbscan_model)
     topics, _ = topic_model.fit_transform(documents)
     
     # Mengambil topik dan artikel teratas
