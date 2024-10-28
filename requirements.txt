@@ -1,4 +1,4 @@
-pip_version>=24.3.1
+python_version >= 3.8
 
 streamlit
 pandas
