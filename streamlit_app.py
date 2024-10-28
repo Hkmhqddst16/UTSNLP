@@ -22,7 +22,6 @@ from sentence_transformers import SentenceTransformer
 from sklearn.feature_extraction.text import CountVectorizer
 from umap import UMAP
 from transformers import pipeline
-import pandas as pd
 
 nlp = spacy.load('en_core_web_sm')
 warnings.filterwarnings("ignore", category=DeprecationWarning)
