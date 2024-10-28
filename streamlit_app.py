@@ -6,7 +6,6 @@ from nltk.tokenize import word_tokenize
 from nltk.stem import WordNetLemmatizer
 import string
 import re
-import pickle
 from pprint import pprint
 import gensim
 import gensim.corpora as corpora
