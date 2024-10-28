@@ -7,7 +7,7 @@ import nltk
 nltk.download('stopwords') 
 
 # Fungsi untuk memproses teks dan menghasilkan topik
-def generate_topics(text, n_topics=5):
+def generate_topics(text, n_topics=3):
     # Membagi teks menjadi daftar kalimat
     documents = text.split('\n')
     
