@@ -1,4 +1,4 @@
-python_version>=0.55.2
+python_version < 3.5
 
 streamlit
 pandas
