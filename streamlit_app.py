@@ -1,5 +1,3 @@
-# prompt: tambhakan code untuk tampilan interface  inputan dan hasilnya AI untuk di running pada streamlit 
-
 import streamlit as st
 import pandas as pd
 import nltk
