@@ -1,4 +1,4 @@
-python_version >= 3.8
+pip install pip==24.3.1
 
 streamlit
 pandas
