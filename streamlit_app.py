@@ -7,12 +7,12 @@ import nltk
 nltk.download('stopwords') 
 
 # Fungsi untuk memproses teks dan menghasilkan topik
-def generate_topics(text, n_topics=3):
+def generate_topics(text, n_topics=5):
     # Membagi teks menjadi daftar kalimat
     documents = text.split('\n')
     
     # Menggunakan BERTopic untuk menemukan topik
-    topic_model = BERTopic()
+    topic_model = BERTopic(hdbscan_params={'min_cluster_size': 10, 'min_samples': 15})
     topics, _ = topic_model.fit_transform(documents)
     
     # Mengambil topik dan artikel teratas
