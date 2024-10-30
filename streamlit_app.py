@@ -24,9 +24,9 @@ if uploaded_file is not None:
   def load_sentences(file):
     try:
     # Attempt to load the CSV, adjusting the delimiter and skipping bad lines
-     df = pd.read_csv(file, delimiter=',', on_bad_lines='skip')
-     df.columns = df.columns.str.strip() # Strip whitespace from colum names
-     return df
+       df = pd.read_csv(file, delimiter=',', on_bad_lines='skip')
+       df.columns = df.columns.str.strip() # Strip whitespace from colum names
+       return df
     except Exception as e:
        st.error(f"Error reading CSV file: {e}")
        return None
