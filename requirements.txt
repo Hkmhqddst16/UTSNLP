@@ -1,24 +1,4 @@
-python_version < 3.5
-pip_version == 24.3.1
-Streamlit_versionm == 1.39.0
-numpy==1.23.5
-pandas==1.5.3
-scikit-learn==1.2.2
+streamlit
+pandas 
 bertopic 
 nltk
-string
-re
-pprint
-gensim
-gensim.corpora
-gensim.utils
-spacy
-spacy
-warnings
-gensim.models.coherencemodel
-hdbscan
-bertopic.vectorizers
-sentence_transformers
-sklearn.feature_extraction.text
-umap
-transformers
